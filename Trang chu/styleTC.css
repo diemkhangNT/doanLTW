@@ -1,0 +1,91 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: lavender;
+}
+#header{
+    background-color: #000;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+}
+#header .text-center{
+    color: #fff;
+    text-align: center;
+}
+
+
+#header .navbar-nav .nav-item, sup{
+    color: #fff;
+}
+#header .fa{
+    color: #fff; 
+}
+#header .navbar-nav .nav-link{
+    color: #fff;
+    display: inline-block;
+}
+#header .navbar-nav .nav-link:hover{
+    color: #000;
+    background-color: #ccc;
+    cursor: pointer;
+}
+#header .fa:hover{
+    opacity: 0.6;
+}
+.row{
+    background-color: #e9ecef;
+}
+#gioithieu{
+    text-align: left;
+    border: 1px solid;
+    margin-top: 20px;
+    margin-left: 10px;
+    text-align: justify;
+    padding: 10px;
+    background-color:lavender;
+}
+#boloc{
+    text-align: left;
+    border: 1px solid;
+    height: 300px;
+    margin-top: 20px;
+    margin-left: 10px;
+    text-align: justify;
+    padding: 10px;
+    background-color: lavender;
+}
+#boloc .dropdown{
+    display: inline-block;
+}
+#gioithieu div h5{
+    display: inline-block;
+}
+#title1 p{
+    border: solid;
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bold;
+    background-color: rgb(188, 188, 253);
+}
+#title2 p{
+    border: solid;
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bold;
+    background-color: rgb(188, 188, 253);
+}
+#title3 p{
+    border: solid;
+    text-align: center;
+    margin-top: 50px;
+    font-weight: bold;
+    background-color: rgb(188, 188, 253);
+}
+.border-lienhe{
+    border: 3px solid black;
+}

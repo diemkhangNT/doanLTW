@@ -1,0 +1,96 @@
+ *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    background-color: lavender;
+}
+#header{
+    background-color: rgb(15, 15, 15);
+    position:fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+}
+#header .text-center{
+    color: #fff;
+}
+#header .text-center h3{
+    display: inline-block;
+    margin-top: 10px;
+}
+/* #header .navbar-nav{ }*/
+.row-search{
+    background-color: #e9ecef;
+}
+
+#header .navbar-nav .nav-item{
+    color: #fff;
+}
+#header .fa,sup{
+    color: #fff; 
+}
+#header .navbar-nav .nav-link{
+    color: #fff;
+    display: inline-block;
+}
+#header .navbar-nav .nav-link:hover{
+    color: rgb(180, 168, 168);
+    cursor: pointer;
+}
+#header .fa:hover{
+    opacity: 0.6;
+}
+#content{
+    margin-top: 107px;
+} 
+.card-title, .card-text{
+    color: pink;
+}
+.text-tt{
+    background-color: rgb(65, 62, 62);
+    color: rgb(255, 255, 255);
+    margin-left: auto;
+    margin-right: auto;
+    text-align: justify;
+    padding: 10px 50px 0px 30px;
+}
+.text-tt .row{
+    border: 1px;
+}
+#content .container-fluid{
+    padding: 25px;
+    background-color: #e9ecef;
+}
+#content .text-lh{
+    border: 1px solid rgb(90, 86, 86);
+    border-radius: 5px;
+    margin-right: 10px;
+}
+#content .loi-nhan{
+    border: 1px solid rgb(90, 86, 86);
+    border-radius: 5px;
+    margin-right: 10px;
+}
+#content .gg-map{
+    border: 1px solid rgb(90, 86, 86);
+    border-radius: 2px;
+}
+.text-ln h6{
+    width: 300px;
+}
+.form-group{
+    width: 400px;
+}
+.btn-g{
+    padding: 0 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#footer .text-center{
+    color: #000;
+}
