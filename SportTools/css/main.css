@@ -7,7 +7,8 @@ body{
     background-color: lavender;
 }
 #header{
-    background-color: #000;
+    background-color: rgb(20, 20, 20);
+    
     top: 0;
     right: 0;
     left: 0;
@@ -41,29 +42,27 @@ body{
     background-color: #e9ecef;
 }
 #gioithieu{
-    text-align: left;
     border: 1px solid;
     margin-top: 20px;
     margin-left: 10px;
     text-align: justify;
     padding: 10px;
-    background-color:lavender;
+    background-color:rgb(179, 179, 196);
 }
 #boloc{
-    text-align: left;
-    border: 1px solid;
-    height: 300px;
-    margin-top: 20px;
-    margin-left: 10px;
+    margin:10px;
     text-align: justify;
-    padding: 10px;
-    background-color: lavender;
+    background-color: rgb(138, 138, 218);
 }
 #boloc .dropdown{
     display: inline-block;
 }
 #gioithieu div h5{
     display: inline-block;
+}
+.carousel-inner img {
+    width: 75%;
+    height: 300px;
 }
 #title1 p{
     border: solid;
@@ -82,10 +81,9 @@ body{
 #title3 p{
     border: solid;
     text-align: center;
-    margin-top: 50px;
     font-weight: bold;
     background-color: rgb(188, 188, 253);
 }
-.border-lienhe{
-    border: 3px solid black;
+fieldset{
+    border: 1px solid black;
 }
