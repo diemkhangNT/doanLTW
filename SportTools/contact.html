@@ -6,137 +6,189 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Liên Hệ | Sport Tools</title>
     <link rel="stylesheet" href="./css/contact.css">
-    <link rel="stylesheet"href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.14.0/jquery.validate.min.js"></script>
 </head>
 <body>
-    <div id="header">
-         <!-- Logo -->
-         <div class="text-left">
+    <div class="container-fluid">
+        <!-- Logo -->
+        <div class="row text-center logo " style="margin-left: 1px; margin-right: 1px;">
             <img src="./img/logo.png" alt="Logo" height="40px" width="50px" style="margin: 10px;">
-            <h4 style="display: inline-block; color: wheat;">Sport Tools</h4>
-            <h2 class="text-center" style="color: whitesmoke; border-bottom: 1px whitesmoke solid;"><i class="fa fa-angle-double-left"></i> LIÊN HỆ <i class="fa fa-angle-double-right"></i></h3>
+            <h4 style="color: white;">Sport Tools</h4>
+            <h2 style="color: wheat;"><i class="fa fa-angle-double-left"></i> LIÊN HỆ <i class="fa fa-angle-double-right"></i></h3>
         </div>
         <!-- NAV -->
-        <nav class="navbar navbar-expand-sm m-auto">
-            <ul class="navbar-nav"> 
-                <li class="nav-item "> 
-                   <a class="nav-link" href="index.html"><i class="fa fa-home"></i> Trang chủ</a> 
-                </li> 
-                <li class="nav-item active"> 
-                   <a class="nav-link" href="contact.html">Liên hệ</a> 
-                </li>
-                <li></li>
-                   <a class="nav-link" href="#">Login</a> 
-                </li> 
-            </ul> 
-            <form class="nav-item ml-auto form-inline" action=""> 
-                <div class="list-group list-group-horizontal ">
-                   <input class="nav-item form-control mr-sm-2" type="text" placeholder="Search..." style="width:100%; color: black;"> 
-                   <button class="nav-item btn btn-success" type="submit">
-                        <i class="nav-item fa fa-search" style="font-size:20px"></i>
+        <nav class="navbar navbar-inverse" style="margin-bottom: 0px;">
+            <div class="container">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="index.html"><i class="fa fa-home"></i> Trang Chủ</a>
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>  
+                        <span class="icon-bar"></span>                 
                     </button>
                 </div>
-            
-                <span class="nav-item" style="padding: 10px;" > 
-                    <i class="nav-item fa fa-heart" style="font-size:30px"></i>
-                    <sup><sup><sup style="font-size: 15px;">0</sup></sup></sup>
-                </span> 
-                <span class="nav-item"> 
-                    <i class="nav-item fa fa-shopping-cart" style="font-size:30px"></i>
-                    <sup><sup><sup style="font-size: 15px;">0</sup></sup></sup>
-                </span>
-            </form>
-         </nav>
-    </div>
-    <div id="content">
-    <!-- Bạn cần giúp gì? -->
-        <div class="container-fluid">
-            <div class="col row-search">
-                <div class="text-center" style="padding: 0px 50px 50px 50px; width:100%">
-                    <h1>Bạn cần giúp gì?</h1>
-                    <div class="list-group list-group-horizontal ">
-                        <input type="text" placeholder="Nhập từ khóa(Hủy đơn hàng, phiếu giảm giá,...)"style="width:100%"> 
-                        <button class="btn btn-success" type="submit">
-                            <i class="fa fa-search" style="font-size:20px"></i>
-                        </button> 
-                    </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <li ><a href="#">Sản Phẩm</a></li>
+                        <li class="active"><a href="contact.html">Liên Hệ</a></li>
+                        <li><a href="#">Tin Tức</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                        <li>
+                            <form class="navbar-form navbar-left" action="#">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="Search" name="search">
+                                    <div class="input-group-btn">
+                                        <button class="btn btn-default" type="submit">
+                                        <i class="glyphicon glyphicon-search"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </li>
+                        <li>
+                            <a  class="navbar-brand" href="#" style="padding: 10px;" > 
+                                <i class="nav-item fa fa-heart" style="font-size:30px"></i>
+                                <sup><sup><sup style="font-size: 15px;">0</sup></sup></sup>
+                            </a> 
+                        </li>
+                        <li>
+                            <a  class="navbar-brand" href="#" style="padding: 10px;"> 
+                                <i class="nav-item fa fa-shopping-cart" style="font-size:30px"></i>
+                                <sup><sup><sup style="font-size: 15px;">0</sup></sup></sup>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
             </div>
+        </nav>
+        <!-- Bạn cần giúp gì? -->
+        <div class="container-fluid" style="background-color: rgb(245, 168, 75);">
+            <div class="text-center" style="padding: 20px 90px 50px 90px;">
+                <h1>Bạn cần giúp gì?</h1>
+                <form>
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Nhập từ khóa (phiếu giảm giá, bỏ giỏ hàng,...)">
+                        <div class="input-group-btn">
+                            <button class="btn btn-success" type="submit">
+                            <i class="glyphicon glyphicon-search"></i>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
         </div>
-            
-    
-    
-    <div class="thong-tin">
-    <!-- Thông tin tác giả -->    
-    <div class="row-tg">
-                <div class="col-12 text-center text-tt">
+        <!-- Thông tin tác giả --> 
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-12 text-center bg-dark">
                     <h1>Thông tin tác giả</h1>
                     <div class=" text-tt ">
                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                         Cửa hàng "Sport Tools" được tạo ra với mục đích nâng cao sức khỏe của mọi người trong đại dịch covid-19.
                         Thành lập bởi Team F4 trẻ tuổi, đầy nhiệt huyết và không ngừng sáng tạo.
                         Họ đến từ nhiều nơi khác nhau, cùng theo đuổi ngành Công nghệ thông tin và cùng gặp nhau tại trường Đại học Ngoại ngữ - Tin học Thành phố Hồ Chí Minh.
-                        Vậy họ là ai? 
-                <div class="row">
-                    <div class="col text-center">
-                        <div class="border-0" style="width:200px;"> 
-                            <img class="card-img-top rounded-circle" src="./img/avatar.png"alt="Card image"> 
-                            <div class="card-body"> 
-                                <h4 class="card-title">Nguyễn Thị Diễm Khang</h4> 
-                                <p class="card-text">
-                                    MSSV: 20DH112027 <br>
-                                    Quê quán: Bến Tre
-                                </p> 
-                            </div> 
-                        </div>
+                        Vậy họ là ai?
                     </div>
-                    <div class="col text-center">
-                        <div class="border-0" style="width:200px;"> 
-                            <img class="card-img-top rounded-circle" src="./img/avatar.png" alt="Card image"> 
-                            <div class="card-body"> 
-                                <h4 class="card-title">Nguyễn Nhất Sơn</h4> 
-                                <p class="card-text">
-                                    MSSV: 20DH111484 <br>
-                                    Quê quán: Gia Lai
-                                </p>                             
-                            </div> 
-                        </div>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+                    <a href="./img/avatar.png">
+                        <img class="img-circle" src="img/avatar.png" alt="Lights" style="width:75%; height: 75%;">   
+                    </a>
+                    <div class="caption text-center">
+                        <h4 class="card-title">Nguyễn Thị Diễm Khang</h4> 
+                        <p class="card-text">
+                            MSSV: 20DH112027 <br>
+                            Quê quán: Bến Tre
+                        </p>
                     </div>
-                    <div class="col text-center">
-                        <div class="border-0" style="width:200px"> 
-                            <img class="card-img-top rounded-circle" src="./img/avatar.png" alt="Card image"> 
-                            <div class="card-body"> 
-                                <h4 class="card-title">Lê Huỳnh Thanh Ngân</h4> 
-                                <p class="card-text">
-                                    MSSV: 20DH110764 <br>
-                                    Quê quán: Tiền Giang
-                                </p>  
-                            </div> 
-                        </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+                    <a href="./img/avatar.png">
+                        <img class="img-circle" src="img/avatar.png" alt="Lights" style="width:75%; height: 75%;">   
+                    </a>
+                    <div class="caption text-center">
+                        <h4 class="card-title">Nguyễn Nhất Sơn</h4> 
+                        <p class="card-text">
+                            MSSV: 20DH111484 <br>
+                            Quê quán: Gia Lai
+                        </p>
                     </div>
-                    <div class="col text-center">
-                        <div class="border-0" style="width:200px"> 
-                            <img class="card-img-top rounded-circle" src="./img/avatar.png" alt="Card image"> 
-                            <div class="card-body"> 
-                                <h4 class="card-title">Lê Tấn Hùng <br></h4> 
-                                <p class="card-text">
-                                    MSSV: 20DH112254 <br>
-                                    Quê quán: Thành phố Hồ Chí Minh
-                                </p>  
-                            </div> 
-                        </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+                    <a href="./img/avatar.png">
+                        <img class="img-circle" src="img/avatar.png" alt="Lights" style="width:75%; height: 75%;">   
+                    </a>
+                    <div class="caption text-center">
+                        <h4 class="card-title">Lê Huỳnh Thanh Ngân</h4> 
+                        <p class="card-text">
+                            MSSV: 20DH110764 <br>
+                            Quê quán: Tiền Giang
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+                    <a href="./img/avatar.png">
+                        <img class="img-circle" src="img/avatar.png" alt="Lights" style="width:75%; height: 75%;">   
+                    </a>
+                    <div class="caption text-center">
+                        <h4 class="card-title">Lê Tấn Hùng <br></h4> 
+                        <p class="card-text">
+                            MSSV: 20DH112254 <br>
+                            Quê quán: Thành phố Hồ Chí Minh
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
+        <div class="container-fluid">
+            <!-- Loi nhan --> 
+            <div class="row">
+                <div class="loi-nhan" style="border: 3px solid black;">
+                    <div class="col-lg-12 col-md-12 col-xs-12" style="height: 300px; width: 400px">
+                        <fieldset>
+                            <legend>Để lại lời nhắn cho chúng tôi</legend>
+                                <form>
+                                    <div>
+                                        <label for="name">Họ và Tên :</label>
+                                        <input type="text" name="name" class="name" placeholder="Nguyễn Văn A" pattern="^[a-zA-ZÀÁÂÃÈÉÊÌÍÒÓÔÕÙÚĂĐĨŨƠàáâãèéêìíòóôõùúăđĩũơƯĂẠẢẤẦẨẪẬẮẰẲẴẶẸẺẼỀỀỂẾưăạảấầẩẫậắằẳẵặẹẻẽềềểếỄỆỈỊỌỎỐỒỔỖỘỚỜỞỠỢỤỦỨỪễệỉịọỏốồổỗộớờởỡợụủứừỬỮỰỲỴÝỶỸửữựỳỵỷỹ\s\W|_]+$" required />
+                                    </div>
+                                    <div>
+                                        <label for="phone">Số điện thoại :</label>
+                                        <input type="tel" name="phone" placeholder="0273456789"  pattern="([0-9]{10})"  />
+                                        </div>
+                                    
+                                    <div>
+                                        <label for="mail">Email :</label>
+                                        <input type="email" name="mail" class="mail" placeholder="nguyenvana@gmail.com" pattern="^([0-9a-zA-Z]([-.\w]*[0-9a-zA-Z])*@([0-9a-zA-Z][-\w]*[0-9a-zA-Z]\.)+[a-zA-Z]{2,9})$" required />
+                                    </div>
+                                    <div>
+                                        <label for="content">Nội Dung :</label>
+                                        <input type="text" name="content" id="" class="content" placeholder="Nội dung trên 100 kí tự" minlength="101" pattern="^([0-9a-zA-Z]([-.\w]*[0-9a-zA-Z])*@([0-9a-zA-Z][-\w]*[0-9a-zA-Z]\.)+[a-zA-Z]{2,9})$" multiple> 
+                                    </div>
+        
+                                    <div>
+                                        <button class="btn-primary" type="submit">Gửi</button>
+                                    </div>
+                                </form>
+                        </fieldset>
+                    </div>
+                </div>
+            </div>
+        </div>  
     </div>       
+    <hr>
+    
+    <div class="thong-tin">
+          
     <!-- Liên hệ, lời nhắn, gg map -->
-    <div class="container-fluid">
-        <div class="row">
+    
             <!-- Phương thức liên hệ -->
             <div class="col-lg-5 col-md-5 col-12" style="border: 1px solid black; margin: 10px;">
                 <fieldset>
@@ -155,37 +207,7 @@
                     </p>
                 </fieldset>
             </div>
-            <!-- Loi nhan -->
-            <div class="loi-nhan" style="border: 1px solid black; margin-top: 10px;">
-                <div class="col-lg-7 col-md-7 col-12" style="height: 100%; width: 100%;">
-                    <fieldset>
-                        <legend>Để lại lời nhắn cho chúng tôi</legend>
-                            <form>
-                                <div>
-                                    <label for="name">Họ và Tên :</label>
-                                    <input type="text" name="name" class="name" placeholder="Nguyễn Văn A" pattern="^[a-zA-ZÀÁÂÃÈÉÊÌÍÒÓÔÕÙÚĂĐĨŨƠàáâãèéêìíòóôõùúăđĩũơƯĂẠẢẤẦẨẪẬẮẰẲẴẶẸẺẼỀỀỂẾưăạảấầẩẫậắằẳẵặẹẻẽềềểếỄỆỈỊỌỎỐỒỔỖỘỚỜỞỠỢỤỦỨỪễệỉịọỏốồổỗộớờởỡợụủứừỬỮỰỲỴÝỶỸửữựỳỵỷỹ\s\W|_]+$" required />
-                                </div>
-                                <div>
-                                    <label for="phone">Số điện thoại :</label>
-                                    <input type="tel" name="phone" placeholder="0273456789"  pattern="([0-9]{10})"  />
-                                    </div>
-                                
-                                <div>
-                                    <label for="mail">Email :</label>
-                                    <input type="email" name="mail" class="mail" placeholder="nguyenvana@gmail.com" pattern="^([0-9a-zA-Z]([-.\w]*[0-9a-zA-Z])*@([0-9a-zA-Z][-\w]*[0-9a-zA-Z]\.)+[a-zA-Z]{2,9})$" required />
-                                </div>
-                                <div>
-                                    <label for="content">Nội Dung :</label>
-                                    <input type="text" name="content" id="" class="content" placeholder="Nội dung trên 100 kí tự" minlength="101" pattern="^([0-9a-zA-Z]([-.\w]*[0-9a-zA-Z])*@([0-9a-zA-Z][-\w]*[0-9a-zA-Z]\.)+[a-zA-Z]{2,9})$" multiple> 
-                                </div>
-    
-                                <div>
-                                    <button class="btn-primary" type="submit">Gửi</button>
-                                </div>
-                            </form>
-                      </fieldset>
-                </div>
-                
+            
             </div>
             <!-- GG Map -->
             <div class="col-lg-12 col-md-12 col-12" style=" border: 1px solid black; margin: 10px;">
@@ -197,39 +219,38 @@
     </div>
     <!-- Footer -->
     <div id="footer">
-        <div class="jumbotron-fluid" style="color: wheat; background-color: black; margin:0; font-size: smaller;">
-            
-            <div class="row text-center tien-ich" style="background-color: black; color: wheat; border-top: 1px whitesmoke solid; border-bottom: 1px whitesmoke solid; padding-top: 10px;">
-                <div class="col">
+        <div class="container-fluid" style="color: wheat; background-color: black; font-size: smaller;">
+            <div class="row text-center" style="border-bottom: 1px solid; margin: 10px;">
+                <div class="col-xs-4">
                     <i class="material-icons" style="font-size:30px">local_shipping</i>
                     <h6>Giao hàng miễn phí</h6>
                 </div>
-                <div class="col thanh-toan">
+                <div class="col-xs-4">
                     <i class="fa fa-money" style="font-size:30px"></i>
-                    <h6 style="padding-top: 10px;">Thanh toán linh hoạt</h6>
+                    <h6>Thanh toán linh hoạt</h6>
                 </div>
-                <div class=" col" style="text-align: left; font-size: 20px;">
+                <div class="col-xs-4" style="text-align: left; font-size: 20px;">
                     <h6>Liên hệ:</h6>
-                    <a href="#" style="color: wheat;">&#9993;</a>
-                    <a href="#" style="color: wheat;"><i class="fa fa-facebook-square"></i></a>
-                    <a href="#" style="color: wheat"><i class="fa fa-instagram"></i></a>
+                    <a href="sporttools@gmail.com" style="color: wheat;">&#9993;</a>
+                    <a href="https://www.facebook.com/sport/" style="color: wheat;"><i class="fa fa-facebook-square"></i></a>
+                    <a href="https://www.ins.com/sporttools.04/" style="color: wheat"><i class="fa fa-instagram"></i></a>
                     &#9742; Hotline: 0322014302
                 </div>
             </div>
-            
-            <div class="font-weight-lighter text-center " style="color: wheat;">	
+            <div class="font-weight-lighter text-center">	
                 <p>
-                    Sport Tools là một trang web chuyên bán các dụng cụ luyện tập thể thao dành cho mọi lứa tuổi.
-                    Trang web hỗ trợ các bộ môn thể thao như vợt cầu lông, vành bóng rổ, phao bơi, kính bơi,...Sản phẩm sẽ được cung cấp đa dạng, nhanh chóng và chi tiết thông tin cho khách hàng. 
+                    Sport Tools là một trang web chuyên bán các dụng cụ luyện tập thể thao dành cho lứa tuổi từ 10 đến 30 tuổi.
+                    Thành lập từ thàng 12 năm 2021. Là một đồ án đầu tay của các bạn sinh viên ngành Công Nghệ Thông Tin, trường Đại học Ngoại ngữ - Tin học Thành phố Hồ Chí Minh.
+                    Nếu có sai sót gì mong khách hàng thông cảm.
                 </p>
                 <p>© 2021 Sport Tools Courses All Rights Reserved.</p>
-                <img src="./img/logo.png" alt="Logo" width="50px" height="50px">
+                <img src="img/logo.png" alt="Logo" width="50px" height="50px">
             </div>
         </div>
     </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script> 
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 </body>
 </html>
 	

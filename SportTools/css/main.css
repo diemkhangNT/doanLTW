@@ -1,89 +1,44 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+.logo{
+    background-color: black;
 }
-body{
-    background-color: lavender;
+
+.carousel-control{
+    margin-left: 30px;
+    margin-right: 30px;
 }
-#header{
-    background-color: rgb(20, 20, 20);
-    
+/* .affix {
     top: 0;
-    right: 0;
-    left: 0;
-    z-index: 1;
-}
-#header .text-center{
-    color: #fff;
-    text-align: center;
-}
-
-
-#header .navbar-nav .nav-item, sup{
-    color: #fff;
-}
-#header .fa{
-    color: #fff; 
-}
-#header .navbar-nav .nav-link{
-    color: #fff;
-    display: inline-block;
-}
-#header .navbar-nav .nav-link:hover{
-    color: #000;
-    background-color: #ccc;
-    cursor: pointer;
-}
-#header .fa:hover{
-    opacity: 0.6;
-}
-.row{
-    background-color: #e9ecef;
-}
-#gioithieu{
-    border: 1px solid;
-    margin-top: 20px;
-    margin-left: 10px;
-    text-align: justify;
-    padding: 10px;
-    background-color:rgb(179, 179, 196);
-}
-#boloc{
-    margin:10px;
-    text-align: justify;
-    background-color: rgb(138, 138, 218);
-}
-#boloc .dropdown{
-    display: inline-block;
-}
-#gioithieu div h5{
-    display: inline-block;
-}
-.carousel-inner img {
-    width: 75%;
-    height: 300px;
-}
+    width: 100%;
+    z-index: 9999 !important;
+} */
+/* 
+.affix + .container-fluid {
+    padding-top: 70px;
+} */
 #title1 p{
-    border: solid;
+    background-color: lavender;
+    border: 5px double black;
     text-align: center;
-    margin-top: 20px;
     font-weight: bold;
-    background-color: rgb(188, 188, 253);
+    font-size: large;
+    margin: 10px;
+    padding: 5px;
 }
 #title2 p{
-    border: solid;
+    background-color: lavender;
+    border: 5px double black;
     text-align: center;
-    margin-top: 20px;
     font-weight: bold;
-    background-color: rgb(188, 188, 253);
+    font-size: large;
+    margin: 10px;
+    padding: 5px;
 }
 #title3 p{
-    border: solid;
+    background-color: lavender;
+    border: 5px double black;
     text-align: center;
     font-weight: bold;
-    background-color: rgb(188, 188, 253);
-}
-fieldset{
-    border: 1px solid black;
+    font-size: large;
+    margin: 10px;
+    padding: 5px;
 }
