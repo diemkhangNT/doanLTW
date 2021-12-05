@@ -1,3 +1,14 @@
 .logo{
     background-color: black;
 }
+legend{
+    font-size: large;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.form-group label{
+    font-family:'Times New Roman', Times, serif;
+    font-size: 19px;
+}
+.loinhan{
+    border-bottom: 4px solid palevioletred;
+}
