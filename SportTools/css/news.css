@@ -18,8 +18,13 @@
     height: 200px;
     width: 300px;
 }
+.texthot{
+    color: whitesmoke;
+    font-size: 25px;
+    font-weight: bold;
+}
 .text{
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 550;
 }
 .news-item td {
@@ -41,12 +46,12 @@
     padding: 15px 0;
 }
 .logo{
-    background-color: black;
+    background-color: rgba(17, 17, 17, 1);
 }
 .glyphicon {   
     margin-right:4px !important; 
 }
- 
+
 .pagination .glyphicon {    
     margin-right:0px !important; 
 }
