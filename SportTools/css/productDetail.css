@@ -1,0 +1,258 @@
+body{
+    background-color: #ffffff;
+}
+.logo{
+    background-color: rgba(17, 17, 17, 1);
+}
+.card {
+    margin-bottom: 10px;
+}
+.card {
+    flex-direction: column;
+    min-width: 1;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 0 solid transparent;
+    border-radius: 0;
+}
+.table-product.table-striped tbody tr:nth-of-type(odd) {
+    background-color: #f3f8fa!important
+}
+.table-product td{
+    border-top: 0px solid #dee2e6 !important;
+    color: #728299!important;
+}
+.product__describe-heading {
+    font-weight: 500;
+    font-size: 30px;
+    padding: 6px;
+    margin: 5px;
+    border-left: 5px solid orange;
+    background-color: rgb(230, 224, 216);
+}
+.name__product {
+    font-size: 16px;
+    text-transform: uppercase;
+    padding: 6px;
+    margin: 5px;
+}
+.col-12 p {
+    font-size: 16px;
+    padding: 6px;
+    margin: 5px;
+}
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 0px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+  .purchase-info input{
+    width: 60px;
+}
+  /* Style the submit button with a specific background color etc */
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  /* Add a background color and some padding around the form */
+  .container1 {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+  a {
+    text-decoration: none !important;
+    color: inherit
+}
+
+a:hover {
+    color: #455A64
+}
+
+.card {
+    border-radius: 5px;
+    background-color: #fff;
+    padding-bottom: 20px
+}
+
+.rating-box {
+    width: 130px;
+    height: 130px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #FBC02D;
+    color: #fff
+}
+
+.rating-label {
+    font-weight: bold
+}
+
+.rating-bar {
+    width: 300px;
+    padding: 8px;
+    border-radius: 5px
+}
+
+.bar-container {
+    width: 100%;
+    background-color: #f1f1f1;
+    text-align: center;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-bottom: 5px
+}
+
+.bar-5 {
+    width: 70%;
+    height: 13px;
+    background-color: #FBC02D;
+    border-radius: 20px
+}
+
+.bar-4 {
+    width: 30%;
+    height: 13px;
+    background-color: #FBC02D;
+    border-radius: 20px
+}
+
+.bar-3 {
+    width: 20%;
+    height: 13px;
+    background-color: #FBC02D;
+    border-radius: 20px
+}
+
+.bar-2 {
+    width: 10%;
+    height: 13px;
+    background-color: #FBC02D;
+    border-radius: 20px
+}
+
+.bar-1 {
+    width: 0%;
+    height: 13px;
+    background-color: #FBC02D;
+    border-radius: 20px
+}
+
+td {
+    padding-bottom: 10px
+}
+
+.star-active {
+    color: #FBC02D;
+    margin-top: 10px;
+    margin-bottom: 10px
+}
+
+.star-active:hover {
+    color: #F9A825;
+    cursor: pointer
+}
+
+.star-inactive {
+    color: #CFD8DC;
+    margin-top: 10px;
+    margin-bottom: 10px
+}
+
+.blue-text {
+    color: #0091EA
+}
+
+.content {
+    font-size: 18px
+}
+
+.profile-pic {
+    width: 90px;
+    height: 90px;
+    border-radius: 100%;
+    margin-right: 30px
+}
+
+.pic {
+    width: 80px;
+    height: 80px;
+    margin-right: 10px
+}
+
+.vote {
+    cursor: pointer
+}
+input[type=text]:focus {
+    border: 3px solid #555;
+}
+label {
+    display: inline-block;
+}
+legend {
+    border: 2px solid red;
+    border-radius: 4px;
+  }
+button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+  .checked {
+    color: orange;
+  }
+  .comment-img {
+    width:50px;
+    height:50px;
+    border: 1px solid #ddd;
+    border-radius:50%;
+  }
+.col-lg-8 col-12{
+    background-color: #eee;
+}
+
+.stared{
+    color: rgb(219, 168, 27);
+}
+.col-item .rating i{     
+    float: left;    
+    font-size: 17px;  
+    height: 52px;
+}
+.col-item .rating {  
+    font-size: 14px; 
+    font-style: italic; 
+}
+.mt-5{
+    color: #ee4d2d;
+}
+.list-unstyled{
+    margin-top: 10px;
+    padding: 10px;
+    background-color: rgba(239, 239, 247, 0.986);
+}
+.comment{
+    border: #0091EA 2px solid;
+}
