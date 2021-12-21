@@ -219,6 +219,7 @@ button {
     text-decoration: none;
     margin: 4px 2px;
     cursor: pointer;
+    display: block;
   }
   .checked {
     color: orange;
@@ -255,4 +256,30 @@ button {
 }
 .comment{
     border: #0091EA 2px solid;
+}
+/* stars */
+div.stars {
+    float: left;
+    margin-left: 20px;
+}
+input.star { 
+    display: none; 
+}
+label.star {
+    float: right;
+    padding: 5px;
+    font-size: 20px;
+    color: #444;
+    transition: all .2s;
+}
+input.star:checked ~ label.star:before {
+    content: '\f005';
+    color: #FBC02D;
+    transition: all .25s;
+}
+input.star-1:checked ~ label.star:before { color: rgb(255, 152, 34); } 
+input.star-2:checked ~ label.star:before { color: rgb(255, 168, 27); } 
+label.star:hover { transform: rotate(-15deg) scale(1.3); }
+label.star:before {
+    content: '\f006';
 }

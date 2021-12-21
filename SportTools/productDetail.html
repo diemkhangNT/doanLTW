@@ -10,6 +10,28 @@
 
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script>
+        function myStar1(){
+            var x = "(1 sao)";
+            document.getElementById("many").innerHTML = x;
+        }
+        function myStar2(){
+            var x = "(2 sao)";
+            document.getElementById("many").innerHTML = x;
+        }
+        function myStar3(){
+            var x = "(3 sao)";
+            document.getElementById("many").innerHTML = x;
+        }
+        function myStar4(){
+            var x = "(4 sao)";
+            document.getElementById("many").innerHTML = x;
+        }
+        function myStar5(){
+            var x = "(5 sao)";
+            document.getElementById("many").innerHTML = x;
+        }
+    </script>
 </head>
 <body>
     <div id="header">
@@ -113,7 +135,7 @@
                     </div>
                     <div class="row">
                         <div class="product__describe">
-                            <div class="container">
+                            <div class="container-fluid">
                                 <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 col-12">
                                     <h3 class="product__describe-heading">Mô tả</h3>
                                     <h3 class="name__product">Kính bơi AMA 700</h3>
@@ -132,24 +154,37 @@
                 </div>
             </div>
         </div>
-        
-        
     </div>
     
     <div class="product__comment">
         <div class="container">
             <div class="row">
                 <h3 class="product__describe-heading">Đánh giá sản phẩm</h3>
-                
+                <div class="stars">
+                    <form action="">
+                        <input class="fa fa-star star star-5" id="star-5" type="radio" name="star" onclick="myStar5()" />
+                        <label class="fa fa-star star star-5" for="star-5"></label>
+                        <input class="fa fa-star star star-4" id="star-4" type="radio" name="star" onclick="myStar4()" />
+                        <label class="fa fa-star star star-4" for="star-4"></label>
+                        <input class="fa fa-star star star-3" id="star-3" type="radio" name="star" onclick="myStar3()" />
+                        <label class="fa fa-star star star-3" for="star-3"></label>
+                        <input class="fa fa-star star star-2" id="star-2" type="radio" name="star" onclick="myStar2()" />
+                        <label class="fa fa-star star star-2" for="star-2"></label>
+                        <input class="fa fa-star star star-1" id="star-1" type="radio" name="star" onclick="myStar1()" />
+                        <label class="fa fa-star star star-1" for="star-1" ></label>
+                    </form>
+                    <p id="many" style="margin: 10px; color: chocolate; font-style: italic;"></p>
+                </div>
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mb-4">
+                    
                     <form action="" style="margin: 10px;">
                         <div>
-                            <label>Họ và Tên:</label>
-                            <input name="FirstName" type="text" placeholder="Vui lòng nhập tên"  pattern="^[a-zA-ZÀÁÂÃÈÉÊÌÍÒÓÔÕÙÚĂĐĨŨƠàáâãèéêìíòóôõùúăđĩũơƯĂẠẢẤẦẨẪẬẮẰẲẴẶẸẺẼỀỀỂẾưăạảấầẩẫậắằẳẵặẹẻẽềềểếỄỆỈỊỌỎỐỒỔỖỘỚỜỞỠỢỤỦỨỪễệỉịọỏốồổỗộớờởỡợụủứừỬỮỰỲỴÝỶỸửữựỳỵỷỹ\s\W|_]+$" required>
+                            <label for="FirstName">Họ và Tên:</label>
+                            <input id="FirstName" type="text" placeholder="Vui lòng nhập tên"  pattern="^[a-zA-ZÀÁÂÃÈÉÊÌÍÒÓÔÕÙÚĂĐĨŨƠàáâãèéêìíòóôõùúăđĩũơƯĂẠẢẤẦẨẪẬẮẰẲẴẶẸẺẼỀỀỂẾưăạảấầẩẫậắằẳẵặẹẻẽềềểếỄỆỈỊỌỎỐỒỔỖỘỚỜỞỠỢỤỦỨỪễệỉịọỏốồổỗộớờởỡợụủứừỬỮỰỲỴÝỶỸửữựỳỵỷỹ\s\W|_]+$" required>
                         </div>
                         <div>
-                            <label>Nội dung:</label>
-                            <textarea name="Content" type="text" placeholder="Vui lòng nhập nội dung" minlength="20" required></textarea>
+                            <label for="Content">Nội dung:</label>
+                            <textarea id="Content" type="text" placeholder="Vui lòng nhập nội dung" minlength="10" required></textarea>
                         </div>
                         <button type="submit" class="btn btn-comment">Gửi phản hồi</button>
                     </form>
@@ -191,18 +226,7 @@
                                 <span class="fa fa-star checked"></span>
                                 <span class="fa fa-star checked"></span>
                                 <span class="fa fa-star"></span>
-                                <small>Đóng gói cẩn thận</s>
-                            </div>
-                            <hr>
-                            <img src="./img/avatar.png" alt="" style="width: 40px; height: 45px;" class="comment-img">
-                            <h5 style="display: inline-block;">Trần Thanh Hằng</h5>
-                            <div class="comment__content">
-                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star"></span>
-                                <small>Đóng gói cẩn thận</s>
+                                <small>Đóng gói cẩn thận</small>
                             </div>
                         </div>
                     </div>
