@@ -7,9 +7,9 @@
     <title>Product | Sport Tools</title>
     <link rel="stylesheet" href="./css/productDetail.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
     <script>
         function myStar1(){
             var x = "(1 sao)";
@@ -31,6 +31,16 @@
             var x = "(5 sao)";
             document.getElementById("many").innerHTML = x;
         }
+        // Them vao gio hang
+        function clickCounter() {
+        if (typeof(Storage) !== "undefined") {
+            if (localStorage.clickcount) {
+            localStorage.clickcount = Number(document.getElementById("count").innerHTML)+1;
+            } else {
+            localStorage.clickcount = 1;
+            }
+            document.getElementById("count").innerHTML = localStorage.clickcount;
+        }}
     </script>
 </head>
 <body>
@@ -84,7 +94,7 @@
                         <li>
                             <a  class="navbar-brand" href="#" style="padding: 10px;"> 
                                 <i class="nav-item fa fa-shopping-cart" style="font-size:30px"></i>
-                                <sup><sup><sup style="font-size: 15px;">0</sup></sup></sup>
+                                <sup><sup><sup style="font-size: 15px;" id="count">0</sup></sup></sup>
                             </a>
                         </li>
                     </ul>
@@ -96,69 +106,65 @@
     </div> 
     <!-- Content -->
     <div class="container">
-        <div class="row">
-            <div class="card">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-5 col-md-5 col-sm-6 col-xs-12">
-                            <div class="white-box text-center"><img src="./img/kinh-boi-aryca.jpg" class="img-responsive"></div>
-                        </div>
-                        <div class="col-lg-7 col-md-7 col-sm-6 col-xs-12">
-                            <h2 class="box-title ">[Mã: 20DH112027] Kính bơi AMA 700</h2>
-                            <div class="rating"> 
-                                <i class="stared fa fa-star"></i><i class="stared fa fa-star"> </i><i class="stared fa fa-star"></i><i class="stared fa fa-star"> </i><i class="fa fa-star"></i> 
-                                <small class="text-success">(16 đánh giá)</small> &nbsp; | &nbsp;120 <small class="text-success">Đã bán</small> | &nbsp;<small class="text-success">Xuất xứ: Malaisia</small>
-                            </div>
-                            <ul class="list-unstyled">
-                                <li><i class="fa fa-check text-success"></i> Đa năng</li>
-                                <li><i class="fa fa-check text-success"></i> Thoải mái</li>
-                                <li><i class="fa fa-check text-success"></i> Chất lượng</li>
-                                <li><i class="fa fa-check text-success"></i> Kiểu dáng năng động</li>
-                                <li><i class="fa fa-check text-success"></i> Bảo vệ tối đa</li>
-                            </ul>
-                            <h3 class="mt-5">
-                                <del><small>500.000 <small> VND</small></small></del> 
-                                450.000 <small class="mt-5"> VND</small>
-                            </h3>
-                            <div class = "purchase-info">
-                                <h4 style="display: inline-block;">Số lượng: </h4>
-                                <input style="display: inline-block;" type = "number" min = "0" value = "1">
-                                <h6 style="display: inline-block;">30 sản phẩm có sẵn</h6>
-                            </div>
-                            <button class="btn btn-danger btn-rounded mr-1" data-toggle="tooltip" title="" data-original-title="Add to cart">
-                                <i class="fa fa-shopping-cart"></i>
-                                Thêm vào giỏ hàng
-                            </button>
-                            <button class="btn btn-primary btn-rounded">Mua Ngay</button>
-                            <hr>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="product__describe">
-                            <div class="container-fluid">
-                                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 col-12">
-                                    <h3 class="product__describe-heading">Mô tả</h3>
-                                    <h3 class="name__product">Kính bơi AMA 700</h3>
-                                    &nbsp;&nbsp; Loại sản phẩm: tập luyện cá nhân | Thương hiệu: ARYCA
-                                    
-                                    <h3 class="product__describe-heading">Chi tiết sản phẩm: </h3>
-                                    <p>- Tầm nhìn tiêu chuẩn, 100°-120°</p>
-                                    <p>- 2 cỡ điều chỉnh: dây đeo và cầu mũi (S, M, L)</p>
-                                    <p>- Kính bơi giải trí, độ ổn định tốt nhờ tròng kính nhỏ</p>
-                                    <p>- Đệm viền mềm dễ điều chỉnh, vừa vặn với khuôn mặt</p>
-                                    <p style="text-align: justify;">- Kiểu dáng thể thao năng động Các chuyên gia đã thiết kế cho bạn một kiểu kiếng bơi rất chuyên nghiệp, kính bơi tráng gương ARYCA WG42A với gọng kiếng màu xanh mạnh mẽ ôm sát vừa vặn mắt cùng với dây đeo chuyên nghiệp, với khoá bốn chấu màu trắng là kiểu dây chắc chắn và là kiểu dáng thể thao nhất hiện nay. Chất liệu an toàn Kính bơi tráng gương ARYCA WG42A có đôi tròng được làm bằng polycarbonate có tráng phản quang, sẽ bảo vệ tối đa cặp mắt của bạn. Ngoài ra, gọng kiếng và dây đeo chuyên nghiệp được làm bằng silicone có độ đàn hồi và độ bền cao. Tiện dụng Kính bơi tráng gương ARYCA WG42A có hộp bảo quản kiếng gọn nhẹ, giúp bạn dễ dàng mang theo trong những lần tập luyện.</p>
-                                </div>
-                            </div>
+        <div class="card">
+            <div class="row ">
+                <div class="col-lg-5 col-md-5 col-sm-6 col-xs-12">
+                    <div class="square" title="Kính bơi AMA 700">
+                        <div class="image">
+                            <img src="./img/kinh-boi-aryca.jpg" >
                         </div>
                     </div>
                 </div>
+                <div class="col-lg-7 col-md-7 col-sm-6 col-xs-12">
+                    <h2 class="box-title ">[Mã: 20DH112027] Kính bơi AMA 700</h2>
+                    <div class="rating"> 
+                        <i class="stared fa fa-star"></i><i class="stared fa fa-star"> </i><i class="stared fa fa-star"></i><i class="stared fa fa-star"> </i><i class="fa fa-star"></i> 
+                        <small class="text-success">(16 đánh giá)</small> &nbsp; | &nbsp;120 <small class="text-success">Đã bán</small> | &nbsp;<small class="text-success">Xuất xứ: Malaisia</small>
+                    </div>
+                    <ul class="list-unstyled">
+                        <li><i class="fa fa-check text-success"></i> Đa năng</li>
+                        <li><i class="fa fa-check text-success"></i> Thoải mái</li>
+                        <li><i class="fa fa-check text-success"></i> Chất lượng</li>
+                        <li><i class="fa fa-check text-success"></i> Kiểu dáng năng động</li>
+                        <li><i class="fa fa-check text-success"></i> Bảo vệ tối đa</li>
+                        <li><i class="fa fa-check text-success"></i> Bảo hành 1 năm</li>
+                    </ul>
+                    <h3 class="mt-5">
+                        <del><small>500.000 <small> VND</small></small></del> 
+                        450.000 <small class="mt-5"> VND</small>
+                    </h3>
+                    <div class = "purchase-info">
+                        <h4 style="display: inline-block;">Số lượng: </h4>
+                        <input style="display: inline-block;" type = "number" min = "1" value = "1">
+                        <h6 style="display: inline-block;">30 sản phẩm có sẵn</h6>
+                    </div>
+                    <div class="button-cute">
+                        <button class="btn btn-danger btn-rounded " data-toggle="tooltip" title="" data-original-title="Add to cart" onclick="clickCounter()">
+                            <i class="fa fa-shopping-cart"></i>
+                            Thêm vào giỏ hàng
+                        </button>
+                        <button class="btn btn-primary btn-rounded">Mua Ngay</button>
+                        <hr>
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
-    
-    <div class="product__comment">
-        <div class="container">
-            <div class="row">
+            <div class="product__describe">
+                <div class="row">
+                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 col-12">
+                        <h3 class="product__describe-heading">Mô tả</h3>
+                        <p class="name__product">Kính bơi AMA 700</p>
+                        &nbsp;&nbsp; Loại sản phẩm: tập luyện cá nhân | Thương hiệu: ARYCA
+                                    
+                        <h3 class="product__describe-heading">Chi tiết sản phẩm </h3>
+                        <span>- Tầm nhìn tiêu chuẩn, 100°-120°</span>
+                        <span>- 2 cỡ điều chỉnh: dây đeo và cầu mũi (S, M, L)</span>
+                        <span>- Kính bơi giải trí, độ ổn định tốt nhờ tròng kính nhỏ</span>
+                        <span>- Đệm viền mềm dễ điều chỉnh, vừa vặn với khuôn mặt</span>
+                        <span style="text-align: justify;">- Kiểu dáng thể thao năng động Các chuyên gia đã thiết kế cho bạn một kiểu kiếng bơi rất chuyên nghiệp, kính bơi tráng gương ARYCA WG42A với gọng kiếng màu xanh mạnh mẽ ôm sát vừa vặn mắt cùng với dây đeo chuyên nghiệp, với khoá bốn chấu màu trắng là kiểu dây chắc chắn và là kiểu dáng thể thao nhất hiện nay. Chất liệu an toàn Kính bơi tráng gương ARYCA WG42A có đôi tròng được làm bằng polycarbonate có tráng phản quang, sẽ bảo vệ tối đa cặp mắt của bạn. Ngoài ra, gọng kiếng và dây đeo chuyên nghiệp được làm bằng silicone có độ đàn hồi và độ bền cao. Tiện dụng Kính bơi tráng gương ARYCA WG42A có hộp bảo quản kiếng gọn nhẹ, giúp bạn dễ dàng mang theo trong những lần tập luyện.</span>
+                    </div>
+                </div>
+            </div>
+            <div class="product__comment">
                 <h3 class="product__describe-heading">Đánh giá sản phẩm</h3>
                 <div class="stars">
                     <form action="">
@@ -173,7 +179,7 @@
                         <input class="fa fa-star star star-1" id="star-1" type="radio" name="star" onclick="myStar1()" />
                         <label class="fa fa-star star star-1" for="star-1" ></label>
                     </form>
-                    <p id="many" style="margin: 10px; color: chocolate; font-style: italic;"></p>
+                    <p id="many" style="margin: 10px; color: chocolate; font-style: italic;">(5 sao)</p>
                 </div>
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mb-4">
                     
@@ -198,6 +204,7 @@
                         <div class="panel-body">
                             <img src="./img/avatar.png" alt="" style="width: 40px; height: 45px;" class="comment-img">
                             <h5 style="display: inline-block;">Nguyễn Bảo Nam</h5>
+                            <p class="comment-time">3 ngày trước</p>
                             <div class="comment__content">
                                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="fa fa-star checked"></span>
                                 <span class="fa fa-star checked"></span>
@@ -209,6 +216,7 @@
                             <hr>
                             <img src="./img/avatar.png" alt="" style="width: 40px; height: 45px;" class="comment-img">
                             <h5 style="display: inline-block;">Lê Thanh Phong</h5>
+                            <p class="comment-time">03/08/2020</p>
                             <div class="comment__content">
                                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="fa fa-star checked"></span>
                                 <span class="fa fa-star checked"></span>
@@ -220,6 +228,7 @@
                             <hr>
                             <img src="./img/avatar.png" alt="" style="width: 40px; height: 45px;" class="comment-img">
                             <h5 style="display: inline-block;">Nguyễn Phương Nguyên</h5>
+                            <p class="comment-time">19/12/2021</p>
                             <div class="comment__content">
                                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="fa fa-star checked"></span>
                                 <span class="fa fa-star checked"></span>
@@ -234,7 +243,7 @@
             </div>
         </div>
     </div>
-
+    
 
     <!--Footer-->
     <div id="footer">

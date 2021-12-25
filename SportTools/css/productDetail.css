@@ -1,5 +1,10 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 body{
-    background-color: #ffffff;
+    background-color: #dadada;
 }
 .logo{
     background-color: rgba(17, 17, 17, 1);
@@ -23,19 +28,23 @@ body{
     border-top: 0px solid #dee2e6 !important;
     color: #728299!important;
 }
+.product__describe span{
+    padding: 5px;
+    margin: 0px;
+    display: block;
+}
 .product__describe-heading {
     font-weight: 500;
     font-size: 30px;
     padding: 6px;
-    margin: 5px;
-    border-left: 5px solid orange;
+    border-left: 6px solid orange;
     background-color: rgb(230, 224, 216);
 }
 .name__product {
-    font-size: 16px;
+    font-size: 20px;
     text-transform: uppercase;
     padding: 6px;
-    margin: 5px;
+    margin: 10px;
 }
 .col-12 p {
     font-size: 16px;
@@ -70,13 +79,6 @@ input[type=text], select, textarea {
   input[type=submit]:hover {
     background-color: #45a049;
   }
-  
-  /* Add a background color and some padding around the form */
-  .container1 {
-    border-radius: 5px;
-    background-color: #f2f2f2;
-    padding: 20px;
-  }
   a {
     text-decoration: none !important;
     color: inherit
@@ -109,51 +111,6 @@ a:hover {
     width: 300px;
     padding: 8px;
     border-radius: 5px
-}
-
-.bar-container {
-    width: 100%;
-    background-color: #f1f1f1;
-    text-align: center;
-    color: white;
-    border-radius: 20px;
-    cursor: pointer;
-    margin-bottom: 5px
-}
-
-.bar-5 {
-    width: 70%;
-    height: 13px;
-    background-color: #FBC02D;
-    border-radius: 20px
-}
-
-.bar-4 {
-    width: 30%;
-    height: 13px;
-    background-color: #FBC02D;
-    border-radius: 20px
-}
-
-.bar-3 {
-    width: 20%;
-    height: 13px;
-    background-color: #FBC02D;
-    border-radius: 20px
-}
-
-.bar-2 {
-    width: 10%;
-    height: 13px;
-    background-color: #FBC02D;
-    border-radius: 20px
-}
-
-.bar-1 {
-    width: 0%;
-    height: 13px;
-    background-color: #FBC02D;
-    border-radius: 20px
 }
 
 td {
@@ -205,13 +162,17 @@ input[type=text]:focus {
     border: 3px solid #555;
 }
 label {
+    position: relative;
+    display: inline-block;
+}
+input, textarea{
     display: inline-block;
 }
 legend {
     border: 2px solid red;
     border-radius: 4px;
   }
-button {
+.btn-comment {
     background-color: #4CAF50;
     border: none;
     color: white;
@@ -220,7 +181,7 @@ button {
     margin: 4px 2px;
     cursor: pointer;
     display: block;
-  }
+}
   .checked {
     color: orange;
   }
@@ -261,25 +222,64 @@ button {
 div.stars {
     float: left;
     margin-left: 20px;
+    
 }
 input.star { 
     display: none; 
 }
 label.star {
     float: right;
-    padding: 5px;
     font-size: 20px;
-    color: #444;
+    padding: 5px;
     transition: all .2s;
+    cursor: pointer;
 }
 input.star:checked ~ label.star:before {
     content: '\f005';
-    color: #FBC02D;
+    color: rgb(255, 168, 27);;
     transition: all .25s;
 }
+/* label.star::before{ 
+    background: rgba(255, 139, 24, 0.6);
+} */
 input.star-1:checked ~ label.star:before { color: rgb(255, 152, 34); } 
 input.star-2:checked ~ label.star:before { color: rgb(255, 168, 27); } 
 label.star:hover { transform: rotate(-15deg) scale(1.3); }
 label.star:before {
-    content: '\f006';
+    content: '\f006' none;
+    color: rgba(255, 139, 24, 0.39);
+}
+/* img */
+.square {
+	width: 100%;
+    display: flex;
+}
+
+.image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: 0.25s;
+    cursor: pointer;
+}
+
+.image {
+	width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    margin: 10px 10px;
+    overflow: hidden;
+}
+.image:hover img{
+    transform: scale(1.1);
+}
+/* btn-cute */
+.button-cute{
+    margin-top: 15px;
+}
+.comment-time{
+    float: right;
+    opacity: 0.6;
+    font-style: italic;
 }
